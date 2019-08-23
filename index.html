@@ -3,15 +3,17 @@
 <head>
 	<meta charset="utf-8">
 	<title>Седона</title>
-	<link rel="stylesheet" type="text/css" href="">
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 	<header class="main-header">
 		<nav class="site-navigation">
-			<a href="#"><img src="#" width="140" height="70" alt="Седона логотип"></a>
 			<ul class="site-navigation-list">
 				<li><a href="#">Информация</a></li>
 				<li><a href="#">Фото и видео</a></li>
+				<li><a><img src="img\logo.png" width="140" height="70" alt="Седона логотип"></a></li>
 				<li><a href="#">Карта штата</a></li>
 				<li><a href="#">Гостиницы</a></li>
 			</ul>
@@ -19,7 +21,10 @@
 	</header>
 	<main class="container">
 		<h1 class="visually-hidden">Седона</h1>
-		<img src="#" width="1200" height="500" alt="Седона фон">
+		<figure class="main-background">
+			<!--<img src="img\background.jpg" width="1200" height="500" alt="Седона фон">-->
+			<!-- I have 3 cartoons here -->
+		</figure>
 		<section class="about-city">
 			<h2>СЕДОНА — небольшой городок в АРИЗОНЕ, зАСЛУЖИвающий большего!</h2>
 			<p class="about-city-preamble">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
@@ -31,21 +36,21 @@
 						<p>седона — не аттракцион для туристов, там течет своя жизнь</p>
 					</div>
 					<div class="feature-first-right-side">
-						<img src="#" width="800" height="260" alt="Виды Седоны">
+						<img src="img\city.jpg" width="800" height="260" alt="Виды Седоны">
 					</div>
 					<ul class="feature-first-city">
 						<li>
-							<p><img src="#" width="80" height="80" alt="Домик"></p>
+							<p><img src="img\house.svg" width="80" height="80" alt="Домик"></p>
 							<h3>Жилье</h3>
 							<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
 						</li>
 						<li>
-							<p><img src="#" width="80" height="80" alt="Бутерброд"></p>
+							<p><img src="img\sandvich.svg" width="80" height="80" alt="Бутерброд"></p>
 							<h3>Еда</h3>
 							<p>Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
 						</li>
 						<li>
-							<p><img src="#" width="80" height="80" alt="Подарок"></p>
+							<p><img src="img\present.svg" width="80" height="80" alt="Подарок"></p>
 							<h3>Сувениры</h3>
 							<p>Не только китайского, но и местного производства!</p>
 						</li>
@@ -53,7 +58,7 @@
 				</li>
 				<li class="feature-second">
 					<div class="feature-second-left-side">
-						<img src="#" width="800" height="260" alt="Виды Каньёна">
+						<img src="img\canyon.jpg" width="800" height="260" alt="Виды Каньёна">
 					</div>
 					<div class="feature-second-right-side">
 						<h3>Там есть<br> мост дьявола</h3>
@@ -78,13 +83,37 @@
 				</li>
 			</ol>
 		</section>
-		<section class="interested">
+		<section class="looking-for-hotel">
 			<h2>Заинтересовались?</h2>
-			<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
-			<img src="#" width="800" height="260" alt="Sedona">
-			<div class="interested-absolute">
-				<p class="interested-find-hotel">Поиск гостинницы в Седоне</p>
-				<!--Здесь будет форма -->
+			<p>Укажите предполагаемые даты поездки,<br>
+			 и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
+			<img src="img\map.jpg" width="800" height="260" alt="Sedona map">
+			<div class="looking-for-hotel-center">
+				<p class="looking-button">Поиск гостинницы в Седоне</p>
+				<form class="looking-form" action="http:\\echo.htmlacademy.ru" method="post">
+					<p class="looking-entry-date">
+						<label for="form-entry-date">Дата заезда:</label>
+						<input type="text" name="entry-date" id="form-entry-date" 
+						placeholder="24 апреля 2020">
+					</p>
+					<p class="looking-leave-date">
+						<label for="form-leave-date">Дата выезда:</label>
+						<input type="text" name="leave-date" id="form-leave-date" 
+						placeholder="24 июня 2020">						
+					</p>
+					<p>
+						<span>Взрослые:</span>
+							<button type="button" name="inc-button-parent" class="button btn-increment">+</button>
+							<output>2</output>
+							<button type="button" name="dec-button-parent" class="button btn-decrement">-</button>
+						
+						<span>Дети:</span>
+							<button type="button" name="inc-button-child" class="button btn-increment">+</button>
+							<output>0</output>
+							<button type="button" name="dec-button-child" class="button btn-decrement">-</button>
+					</p>
+					<button class="button btn-find" type="submit">Найти</button>
+				</form>
 			</div>
 		</section>		
 	</main>
@@ -96,7 +125,7 @@
 			<li><a href="#">Ютуб</a></li>
 		</ul>
 		<p class="footer-copyright">
-			Website by <a href="#"><img src="#" width="auto" height="auto" alt="Html Academy"></a>
+			Website by <a href="#"><img src="img\academy.svg" width="115" height="41" alt="Html Academy"></a>
 		</p>
 	</footer>
 </body>
