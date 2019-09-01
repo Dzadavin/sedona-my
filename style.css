@@ -11,8 +11,37 @@ body {
 a {
 	text-decoration: none;
 }
+.container {
+	margin: 0;
+	padding: 0;
+	width: 1200px;
+	margin: auto;
+}
 .site-navigation-list {
+	margin: 0;
+	padding: 0;
+	height: 26px;
 	list-style: none;
+	display: flex;
+	justify-content: space-between;
+}
+.left-column {
+	padding-top: 6px;
+	width: 340px;
+	padding-left: 73px;
+	display: flex;
+	justify-content: space-between;
+}
+.right-column {
+	padding-top: 6px;
+	/*border: 1px dashed #333;*/
+	width: 340px;
+	padding-right: 73px;
+	display: flex;
+	justify-content: space-between;
+}
+.right-column li:first-child {
+	padding-left: 10px;
 }
 .site-navigation-list li {
 	text-align: center;
@@ -36,6 +65,8 @@ a {
 	color: rgba(0,0,0,0.3);
 }
 .main-background {
+	padding: 0;
+	margin: 0;
 	width: 1200px;
 	height: 500px;
 	background-color: white;
@@ -43,6 +74,10 @@ a {
 		url("img/welcome.png") no-repeat center 76px,
 		url("img/shape1200.png") no-repeat center bottom,
 		url("img/background.jpg");
+}
+.about-city-features {
+	margin: 0;
+	padding: 0;
 }
 .about-city h2 {
 	font-size: 21px;
@@ -62,6 +97,29 @@ a {
 	color: #333;
 	text-align: center;
 }
+.feature-first-right-side {
+	margin: 0;
+	padding: 0;
+	width: 800px;
+	height: auto;
+	background-color: white;
+	background: url("img/city.jpg") no-repeat center center;
+}
+.feature-second-left-side {
+	margin: 0;
+	padding: 0;
+	width: 800px;
+	height: auto;
+	background-color: white;
+	background: url("img/canyon.jpg") no-repeat center center;
+}
+.first-row {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	margin-bottom: 49px;
+	height: 260px;
+}
 .feature-first-left-side p,
 .feature-second-right-side p {
 	color: #fff;
@@ -70,16 +128,56 @@ a {
 .feature-second-right-side {
 	background-color: #81b3d2;
 	color: #fff;
+	width: 400px;
+
 }
+.feature-first-left-side h3,
+.feature-second-right-side h3 {
+	padding-top: 45px;
+}
+.feature-first-city {
+	display: flex;
+	margin-bottom: 70px;
+}
+.feature-first-city li {
+	width: 400px;
+}
+.feature-second {
+	height: 260px;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
 .about-city h3 {
+	
 	font-weight: bold;
 	font-size: 21px;
 	text-align: center;
+}
+.third-fifth {
+	display: flex;
+	margin-bottom: 55px;
+}
+.third-fifth li {
+	width: 400px;
+	height: 255px;
+}
+.third-fifth h3 {
+	padding-top: 45px;
 }
 .feature-third,
 .feature-four,
 .feature-five {
 	background-color: #eee;
+}
+.looking--background {
+	padding: 0;
+	margin: 0;
+	width: 1200px;
+	height: 473px;
+	background-color: white;
+	background: url("img/map.jpg") no-repeat center center;
 }
 .looking-for-hotel h2 {
 	font-size: 30px;
@@ -87,10 +185,14 @@ a {
 	text-align: center;
 }
 .looking-for-hotel p {
+
 	font-size: 14px;
 	line-height: 24px;
 	color: #333;
 	text-align: center;
+}
+.looking-p {
+	margin-bottom: 139px;
 }
 p.looking-button {
 	background-color: #766357;
@@ -169,14 +271,21 @@ p.looking-button:active {
 .btn-find:active {
 	background-color: #5496bd;
 }
+.main-footer {
+	display: flex;
+	justify-content: space-between;
+}
 .main-footer h3 {
 	font-weight: bold;
 	font-size: 21px;
 	text-align: center;
+	width: 240px;
+	padding-left: 73px;
 }
 .main-footer ul {
 	list-style: none;
 	text-align: center;
+	width: 151px;
 }
 .main-footer li {
 	background-color: #81b3d2;
@@ -201,6 +310,9 @@ p.looking-button:active {
 	color: #000;
 	font-size: 14px;
 	line-height: 26px;
+	width: 241px;
+	border: 1px solid black;
+	padding-right: 73px;
 }
 /*----------------- HOTELS ---------------------*/
 .site-navigation-current {
