@@ -290,6 +290,21 @@ p.looking-button:active {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	position: relative;
+}
+.looking-entry-date svg,
+.looking-leave-date svg {
+	position: absolute;
+	right: 7px;
+	fill: #cacaca;
+}
+.looking-entry-date svg:hover,
+.looking-leave-date svg:hover {
+	fill: #000;
+}
+.looking-entry-date svg:active,
+.looking-leave-date svg:active {
+	fill: #81b3d2;
 }
 .children-adults {
 	margin: 0;
