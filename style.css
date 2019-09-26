@@ -101,7 +101,7 @@ input[type="radio"].visually-hidden {
 	background-color: white;
 	background:
 		url("img/welcome.png") no-repeat center 76px,
-		url("img/shape1200.png") no-repeat center bottom,
+		url("img/Shape1200.png") no-repeat center bottom,
 		url("img/background.jpg");
 }
 
@@ -485,12 +485,20 @@ p.looking-button:active {
 .filter-hotels fieldset {
 	border: none;
 }
+.filter-range {
+	border: 1px dotted yellow;
+	width: 330px;
+	margin: 50px 0 50px auto;
+}
 .left-side legend,
 .middle legend,
-.filter-hotels-range-min {
+.filter-range-title {
 	font-size: 16px;
 	line-height: 21px;
 	font-weight: bold;
+}
+.filter-range-title {
+	margin-bottom: 9px;
 }
 .filter-hotels p {
 	font-size: 14px;
@@ -514,6 +522,7 @@ p.looking-button:active {
 	padding: 0;
 	margin: 0;
 }
+
 .filter-hotels button {
 	font: inherit;
 	border: 2px solid #fff;
